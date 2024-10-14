@@ -6,10 +6,10 @@
         <Nullable>enable</Nullable>
         <LangVersion>Latest</LangVersion>
 
-        <PackageId></PackageId>
-        <Description></Description>
-        <PackageTags></PackageTags>
-        <PackageReleaseNotes>https://github.com/Drammer-whisky-app/TODO/releases</PackageReleaseNotes>
+        <PackageId>Drammer.Web.IntegrationTesting</PackageId>
+        <Description>Integration testing framework for the Drammer whisky app.</Description>
+        <PackageTags>testing integration-testing</PackageTags>
+        <PackageReleaseNotes>https://github.com/Drammer-whisky-app/Drammer.Web.IntegrationTesting/releases</PackageReleaseNotes>
         <Authors>Marthijn van den Heuvel,Drammer</Authors>
         <Copyright>Copyright (c) 2024 Drammer whisky app</Copyright>
 
