@@ -1,4 +1,4 @@
-# Drammer.Package.Template
+# Drammer.Web.IntegrationTesting
 Integration testing framework for that is used for the [Drammer whisky app](https://drammer.com).
 
 [![build](https://github.com/Drammer-whisky-app/Drammer.Web.IntegrationTesting/actions/workflows/build.yml/badge.svg)](https://github.com/Drammer-whisky-app/Drammer.Web.IntegrationTesting/actions/workflows/build.yml)
