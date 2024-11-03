@@ -4,6 +4,10 @@ using Microsoft.Extensions.Configuration;
 
 namespace Drammer.Web.IntegrationTesting;
 
+/// <summary>
+/// The key vault web application factory.
+/// </summary>
+/// <typeparam name="TProgram">The program type.</typeparam>
 public class KeyVaultWebApplicationFactory<TProgram> : WebApplicationFactory<TProgram>
     where TProgram: class
 {
@@ -13,6 +17,12 @@ public class KeyVaultWebApplicationFactory<TProgram> : WebApplicationFactory<TPr
 
     private readonly Dictionary<string, string?>? _configuration;
 
+    /// <summary>
+    /// Creates a new instance of the <see cref="KeyVaultWebApplicationFactory{TProgram}"/> class.
+    /// </summary>
+    /// <param name="secrets">The secrets.</param>
+    /// <param name="environment">The environment.</param>
+    /// <param name="additionalConfiguration">Additional configuration properties.</param>
     public KeyVaultWebApplicationFactory(
         IEnumerable<KeyVaultSecret> secrets,
         string environment = "IntegrationTest",
@@ -23,6 +33,7 @@ public class KeyVaultWebApplicationFactory<TProgram> : WebApplicationFactory<TPr
         _configuration = additionalConfiguration;
     }
 
+    /// <inheritdoc />
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
         var configuration = _configuration ?? new Dictionary<string, string?>();
