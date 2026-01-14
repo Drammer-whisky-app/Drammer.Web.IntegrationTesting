@@ -30,7 +30,6 @@ public static class WebHostBuilderExtensions
                 x.Services.AddSingleton<ILoggerProvider>(new XUnitLoggerProvider(testOutputHelper));
             });
 
-
         return builder;
     }
 
