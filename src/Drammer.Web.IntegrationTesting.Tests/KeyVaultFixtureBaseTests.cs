@@ -37,6 +37,7 @@ public sealed class KeyVaultFixtureBaseTests
         public override Response<Azure.Security.KeyVault.Secrets.KeyVaultSecret> GetSecret(
             string name,
             string? version = null,
+            SecretContentType? outContentType = null,
             CancellationToken cancellationToken = default)
         {
             var secret = new Azure.Security.KeyVault.Secrets.KeyVaultSecret(name, _fixture.Create<string>());
