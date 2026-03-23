@@ -12,9 +12,7 @@ public class KeyVaultWebApplicationFactory<TProgram> : WebApplicationFactory<TPr
     where TProgram: class
 {
     private readonly IEnumerable<KeyVaultSecret> _secrets;
-
     private readonly string _environment;
-
     private readonly Dictionary<string, string?>? _configuration;
 
     /// <summary>

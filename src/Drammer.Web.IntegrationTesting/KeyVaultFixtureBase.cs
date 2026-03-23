@@ -9,7 +9,6 @@ namespace Drammer.Web.IntegrationTesting;
 public abstract class KeyVaultFixtureBase : IDisposable
 {
     private readonly List<KeyVaultSecret> _secrets = new();
-
     private readonly SecretClient _client;
 
     /// <summary>
